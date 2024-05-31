@@ -11,5 +11,5 @@ We then filter our 50 depth order book output using the index recorded - for the
 
 You can find the demonstration of the below in the Lobster_comparison notebok
 
-![LOBSTER Comparison]([data/images/comparison.png])
+![LOBSTER Comparison]([https://github.com/samdelaney42/L2_Order_Book_Handler/blob/b8606a64775bd9d5d43931b69a1ef424b90f3d74/data/images/comparison.png])
     
