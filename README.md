@@ -5,10 +5,11 @@ Using the AAPL 50 level sample data message supplied here https://lobsterdata.co
 
 We read the message file into order_book.py and recreate the order book over the period.
 
-Taking only the BBO from our output, we see that visually, it looks accurate to the lobster L1 order book output.
+To accurately recreate the LOBSTER L1 order book output, record each event which is in both the 50 and 1 message file.
 
-Our version contains more events, as indicated by the x axis - this is becasue, as we are reading in the 50 level message file and trimming the output just to L1, the numebr of events corresponds to updates to any of the 50 levels. Whereas, per the lobster documentation, each row of the L1 book file corresponds to to a row of the L1 message file.
+We then filter our 50 depth order book output using the index recorded - for the 20k messages we test with, there is a 0.3% error rate.
 
+You can find the demonstration of the below in the Lobster_comparison notebok
 
-![AAPL_BBO_LOBSTER_Comparison](https://github.com/samdelaney42/L2_Order_Book_Handler/assets/45703559/2ac2a8fb-4b50-4d27-81e8-5063dbb0b428)
+![LOBSTER Comparison]([https://github.com/samdelaney42/L2_Order_Book_Handler/blob/main/data/images/comparison.png])
     
