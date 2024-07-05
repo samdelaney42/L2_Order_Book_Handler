@@ -1,6 +1,10 @@
 # L2_Order_Book_Handler
 This project parses message data form the LOBSTER data set and constructs an order book.
 
+The Buy and Sell side of the book are represented by Binary Search Trees where each node is a limit price.
+
+Each node in the trees is a doubley linked list representing the order queue at that limit.
+
 Using the AAPL 50 level sample data message supplied here https://lobsterdata.com/info/DataSamples.php
 
 We read the message file into order_book.py and recreate the order book over the period.
